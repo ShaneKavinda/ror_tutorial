@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   #following code declares that GET/articles requests are mapped into 
   # "index" action of "ArticlesController"
 
-  resources :articles
+  resources :articles do
+    resources: comments
+  end
 
 end
