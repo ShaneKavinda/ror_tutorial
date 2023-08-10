@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # "index" action of "ArticlesController"
 
   resources :articles do
-    resources: comments
+    resources :comments
   end
 
 end
